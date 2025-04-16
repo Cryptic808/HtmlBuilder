@@ -252,6 +252,36 @@ nav a:hover:after {
   color: var(--accent);
 }
 
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-details li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-details li i {
+  width: 30px;
+  color: var(--secondary);
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.contact-details a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+.contact-details a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .contact-method {
   margin-bottom: 20px;
   display: flex;

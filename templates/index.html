@@ -121,7 +121,7 @@
   <section class="section" id="contact">
     <div class="container">
       <h3>Contact Us</h3>
-      <p>Let's start your next big project together.</p>
+      <p>Let's talk business. Reach out to us anytime.</p>
       
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
@@ -136,28 +136,31 @@
       <div class="contact-container">
         <div class="contact-info">
           <h4>Get in Touch</h4>
-          <p>Ready to start your project? Contact us today for a free consultation and quote.</p>
           
-          <div class="contact-method">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>123 Construction Avenue, Business District</span>
-          </div>
-          
-          <div class="contact-method">
-            <i class="fas fa-envelope"></i>
-            <span>info@mutabtrineinvestments.com</span>
-          </div>
-          
-          <div class="contact-method">
-            <i class="fas fa-phone"></i>
-            <span>+254 700 123 456</span>
-          </div>
+          <ul class="contact-details">
+            <li>
+              <i class="fas fa-envelope"></i>
+              <strong>Email:</strong> <a href="mailto:salesmarketing@gmail.com">salesmarketing@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <strong>Phone:</strong> <a href="tel:+260972834973">0972834973</a> / <a href="tel:+260760419987">+260 760419987</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <strong>Address:</strong> Nyumba Yanga, RDF Building, along Alex Chola Rd, Woodlands
+            </li>
+            <li>
+              <i class="fab fa-facebook"></i>
+              <strong>Facebook:</strong> <a href="https://facebook.com/MutabtrineInvestmentsLimited" target="_blank">Mutabtrine Investments Limited</a>
+            </li>
+          </ul>
         </div>
         
         <form id="contactForm" action="/submit-form" method="POST">
           <input type="text" id="name" name="name" placeholder="Your Name" required>
           <input type="email" id="email" name="email" placeholder="Your Email" required>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
