@@ -120,7 +120,7 @@ def service_detail(service_name):
         abort(404)
     
     service = SERVICES[service_name]
-    return render_template('service.html', service=service, service_name=service_name)
+    return render_template('service.html', service=service, service_name=service_name, services=SERVICES)
 
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
