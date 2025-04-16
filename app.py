@@ -105,6 +105,18 @@ SERVICES = {
             'Wayfinding systems',
             'Corporate environments'
         ]
+    },
+    'it-services': {
+        'title': 'IT Services',
+        'description': 'Professional IT services and solutions to support your business technology needs.',
+        'image': 'it-services.jpg',
+        'features': [
+            'Network setup and maintenance',
+            'Cybersecurity solutions',
+            'Cloud computing services',
+            'Software development',
+            'IT consulting and support'
+        ]
     }
 }
 
