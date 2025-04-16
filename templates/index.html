@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutabrine | Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" class="logo-icon">
+        <path d="M12 2L1 21h22L12 2zm0 4l7.5 13h-15L12 6z"/>
+      </svg>
+      <h1>MUTABRINE</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h2>Experience the Future with Mutabrine</h2>
+    <p>Transforming the ordinary into extraordinary through innovation and style.</p>
+    <a href="#about" class="hero-btn">Discover More</a>
+  </section>
+
+  <section class="section" id="about">
+    <h3>What is Mutabrine?</h3>
+    <p>
+      Mutabrine is a journey into the unknown. Whether it's a product, concept, or artistic revolution — it represents transformation, innovation, and style. Our mission is to disrupt the ordinary with bold creativity and push the boundaries of what's possible.
+    </p>
+    <p>
+      Founded on the principles of exploration and evolution, we strive to create experiences that challenge perception and inspire action. Mutabrine stands at the intersection of technology, design, and human experience.
+    </p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Visual Vibes</h3>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1581091215367-5c7f6de7a16e" alt="Abstract Digital Art">
+        <div class="gallery-overlay">
+          <h4>Digital Transformation</h4>
+          <p>The evolution of creativity in the digital space</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1518972559570-0c3a5b9043f5" alt="Futuristic Architecture">
+        <div class="gallery-overlay">
+          <h4>Architectural Vision</h4>
+          <p>Reimagining spaces for tomorrow's world</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Technology Interface">
+        <div class="gallery-overlay">
+          <h4>Code & Design</h4>
+          <p>Where logic meets aesthetics</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f" alt="Virtual Reality">
+        <div class="gallery-overlay">
+          <h4>Immersive Experience</h4>
+          <p>Blurring the lines between reality and imagination</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="Modern Workspace">
+        <div class="gallery-overlay">
+          <h4>Modern Workflow</h4>
+          <p>Creating environments that inspire innovation</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="Futuristic Technology">
+        <div class="gallery-overlay">
+          <h4>Future Tech</h4>
+          <p>Exploring the possibilities of tomorrow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h3>Core Features</h3>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766" alt="Innovation">
+        <div class="gallery-overlay">
+          <h4>Innovation</h4>
+          <p>Pushing boundaries and exploring new possibilities</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2" alt="Design">
+        <div class="gallery-overlay">
+          <h4>Design</h4>
+          <p>Creating visually stunning and functional solutions</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Collaboration">
+        <div class="gallery-overlay">
+          <h4>Collaboration</h4>
+          <p>Working together to achieve extraordinary results</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Connect With Us</h3>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash-message flash-{{ category }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h4>Get in Touch</h4>
+        <p>Have questions or want to collaborate? Reach out to us using the form or contact us directly.</p>
+        
+        <div class="contact-method">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>123 Innovation Way, Future City, FC 12345</span>
+        </div>
+        
+        <div class="contact-method">
+          <i class="fas fa-envelope"></i>
+          <span>hello@mutabrine.com</span>
+        </div>
+        
+        <div class="contact-method">
+          <i class="fas fa-phone"></i>
+          <span>+1 (555) 123-4567</span>
+        </div>
+      </div>
+      
+      <form id="contactForm" action="/submit-form" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Mutabrine</h4>
+        <p>Transforming the ordinary into extraordinary through innovation and style.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2025 Mutabrine. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
