@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mutabrine | Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #e0e0e0;
+    }
+    nav a {
+      color: #bbb;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1532634726-8b9fb99825c7') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.6);
+      padding: 20px 30px;
+      border-radius: 12px;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #eaeaea;
+    }
+    .section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    input, textarea {
+      padding: 12px;
+      background: #222;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+    }
+    button {
+      padding: 12px;
+      background: #ff4d6d;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #e63950;
+    }
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      background: #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MUTABRINE</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Experience the Future with Mutabrine</h2>
+  </section>
+
+  <section class="section" id="about">
+    <h3>What is Mutabrine?</h3>
+    <p>
+      Mutabrine is a journey into the unknown. Whether it's a product, concept, or artistic revolution — it represents transformation, innovation, and style. Our mission is to disrupt the ordinary with bold creativity.
+    </p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Visual Vibes</h3>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1581091215367-5c7f6de7a16e" alt="Gallery Image 1">
+      <img src="https://images.unsplash.com/photo-1518972559570-0c3a5b9043f5" alt="Gallery Image 2">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Gallery Image 3">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Connect With Us</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Mutabrine. All rights reserved.
+  </footer>
+
+</body>
+</html>
