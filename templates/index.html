@@ -10,153 +10,190 @@
 </head>
 <body>
   <header>
-    <h1>Mutabtrine Investments Ltd</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="mobile-menu-btn">
-      <i class="fas fa-bars"></i>
-    </button>
+    <div class="container">
+      <h1>Mutabtrine Investments Ltd</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>We Build. We Brand. We Deliver.</h2>
+    <div class="container">
+      <h2>Where Innovation Meets Execution</h2>
+    </div>
   </section>
 
   <section class="section" id="about">
-    <h3>About Us</h3>
-    <p class="about">
-      Mutabtrine Investments Limited is your one-stop solution for innovative construction, creative branding, precision printing, metal fabrication, and more. We combine craftsmanship with cutting-edge technology to deliver outstanding results in every project.
-    </p>
+    <div class="container">
+      <h3>About Us</h3>
+      <p class="about">
+        Mutabtrine Investments Limited is your one-stop solution for innovative construction, creative branding, precision printing, metal fabrication, and more. We combine craftsmanship with cutting-edge technology to deliver outstanding results in every project.
+      </p>
+    </div>
   </section>
 
   <section class="section" id="services">
-    <h3>Our Services</h3>
-    <div class="services">
-      <div class="service">
-        <i class="fas fa-hard-hat"></i>
-        <h4>Construction</h4>
-        <p>Residential, commercial, and custom builds with expert project management.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-paint-brush"></i>
-        <h4>Branding & Design</h4>
-        <p>From logos to full campaigns — we bring your brand to life.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-tshirt"></i>
-        <h4>T-Shirt Printing</h4>
-        <p>High-quality screen and digital printing for events and businesses.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-cubes"></i>
-        <h4>3D Signage</h4>
-        <p>Eye-catching, durable 3D signage to boost your visibility.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-copy"></i>
-        <h4>Photocopying & Printing</h4>
-        <p>Efficient, affordable document services with sharp results.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-cogs"></i>
-        <h4>Metal Fabrication</h4>
-        <p>Custom metal work for construction, signage, and installations.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-print"></i>
-        <h4>Large Format Printing</h4>
-        <p>Banners, posters, and outdoor prints with maximum impact.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-building"></i>
-        <h4>Office Branding</h4>
-        <p>Transform your workspace with professional, personalized designs.</p>
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/construction.jpg') }}" alt="Construction">
+          </div>
+          <h4>Construction</h4>
+          <p>Residential, commercial, and custom builds with expert project management.</p>
+          <a href="{{ url_for('service_detail', service_name='construction') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/branding.jpg') }}" alt="Branding">
+          </div>
+          <h4>Branding & Design</h4>
+          <p>From logos to full campaigns — we bring your brand to life.</p>
+          <a href="{{ url_for('service_detail', service_name='branding') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/tshirts.jpg') }}" alt="T-Shirt Printing">
+          </div>
+          <h4>T-Shirt Printing</h4>
+          <p>High-quality screen and digital printing for events and businesses.</p>
+          <a href="{{ url_for('service_detail', service_name='tshirt-printing') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/signage.jpg') }}" alt="3D Signage">
+          </div>
+          <h4>3D Signage</h4>
+          <p>Eye-catching, durable 3D signage to boost your visibility.</p>
+          <a href="{{ url_for('service_detail', service_name='3d-signage') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/printing.jpg') }}" alt="Photocopying & Printing">
+          </div>
+          <h4>Photocopying & Printing</h4>
+          <p>Efficient, affordable document services with sharp results.</p>
+          <a href="{{ url_for('service_detail', service_name='printing') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/fabrication.jpg') }}" alt="Metal Fabrication">
+          </div>
+          <h4>Metal Fabrication</h4>
+          <p>Custom metal work for construction, signage, and installations.</p>
+          <a href="{{ url_for('service_detail', service_name='metal-fabrication') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/large-format.jpg') }}" alt="Large Format Printing">
+          </div>
+          <h4>Large Format Printing</h4>
+          <p>Banners, posters, and outdoor prints with maximum impact.</p>
+          <a href="{{ url_for('service_detail', service_name='large-format') }}" class="service-link">View Details →</a>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{{ url_for('static', filename='images/office.jpg') }}" alt="Office Branding">
+          </div>
+          <h4>Office Branding</h4>
+          <p>Transform your workspace with professional, personalized designs.</p>
+          <a href="{{ url_for('service_detail', service_name='office-branding') }}" class="service-link">View Details →</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section" id="contact">
-    <h3>Contact Us</h3>
-    
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        {% for category, message in messages %}
-          <div class="flash-message flash-{{ category }}">
-            {{ message }}
-          </div>
-        {% endfor %}
-      {% endif %}
-    {% endwith %}
-
-    <div class="contact-container">
-      <div class="contact-info">
-        <h4>Get in Touch</h4>
-        <p>Ready to start your project? Contact us today for a free consultation and quote.</p>
-        
-        <div class="contact-method">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>123 Construction Avenue, Business District</span>
-        </div>
-        
-        <div class="contact-method">
-          <i class="fas fa-envelope"></i>
-          <span>info@mutabtrineinvestments.com</span>
-        </div>
-        
-        <div class="contact-method">
-          <i class="fas fa-phone"></i>
-          <span>+254 700 123 456</span>
-        </div>
-      </div>
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Let's start your next big project together.</p>
       
-      <form id="contactForm" action="/submit-form" method="POST">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="flash-message flash-{{ category }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h4>Get in Touch</h4>
+          <p>Ready to start your project? Contact us today for a free consultation and quote.</p>
+          
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Construction Avenue, Business District</span>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <span>info@mutabtrineinvestments.com</span>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <span>+254 700 123 456</span>
+          </div>
+        </div>
+        
+        <form id="contactForm" action="/submit-form" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Mutabtrine Investments Ltd</h4>
-        <p>Building brands and spaces with precision and innovation since 2015.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Mutabtrine Investments Ltd</h4>
+          <p>Building brands and spaces with precision and innovation since 2015.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="{{ url_for('service_detail', service_name='construction') }}">Construction</a></li>
+            <li><a href="{{ url_for('service_detail', service_name='branding') }}">Branding & Design</a></li>
+            <li><a href="{{ url_for('service_detail', service_name='printing') }}">Printing Services</a></li>
+            <li><a href="{{ url_for('service_detail', service_name='metal-fabrication') }}">Metal Fabrication</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
         </div>
       </div>
       
-      <div class="footer-section">
-        <h4>Our Services</h4>
-        <ul>
-          <li><a href="#services">Construction</a></li>
-          <li><a href="#services">Branding & Design</a></li>
-          <li><a href="#services">Printing Services</a></li>
-          <li><a href="#services">Metal Fabrication</a></li>
-        </ul>
+      <div class="copyright">
+        &copy; 2025 Mutabtrine Investments Ltd. All rights reserved.
       </div>
-      
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="copyright">
-      &copy; 2025 Mutabtrine Investments Ltd. All rights reserved.
     </div>
   </footer>
 

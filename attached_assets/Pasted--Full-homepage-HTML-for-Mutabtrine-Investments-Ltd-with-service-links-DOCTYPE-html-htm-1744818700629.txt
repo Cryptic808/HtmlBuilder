@@ -1,0 +1,96 @@
+<!-- Full homepage HTML for Mutabtrine Investments Ltd with service links -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mutabtrine Investments Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mutabtrine Investments Ltd</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Where Innovation Meets Execution</h2>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <img src="images/construction.jpg" alt="Construction">
+          <h4>Construction</h4>
+          <a href="services/construction.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/branding.jpg" alt="Branding">
+          <h4>Branding & Design</h4>
+          <a href="services/branding.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/tshirts.jpg" alt="T-Shirt Printing">
+          <h4>T-Shirt Printing</h4>
+          <a href="services/tshirt-printing.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/signage.jpg" alt="3D Signage">
+          <h4>3D Signage</h4>
+          <a href="services/3d-signage.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/printing.jpg" alt="Photocopying & Printing">
+          <h4>Photocopying & Printing</h4>
+          <a href="services/printing.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/fabrication.jpg" alt="Metal Fabrication">
+          <h4>Metal Fabrication</h4>
+          <a href="services/metal-fabrication.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/large-format.jpg" alt="Large Format Printing">
+          <h4>Large Format Printing</h4>
+          <a href="services/large-format.html">View Details →</a>
+        </div>
+        <div class="service">
+          <img src="images/office.jpg" alt="Office Branding">
+          <h4>Office Branding</h4>
+          <a href="services/office-branding.html">View Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Let’s start your next big project together.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 Mutabtrine Investments Ltd. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
