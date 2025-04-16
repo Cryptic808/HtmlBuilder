@@ -10,7 +10,7 @@ app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key")
 
 @app.route('/')
 def index():
-    """Render the main page of the Mutabrine website."""
+    """Render the main page of the Mutabtrine Investments Ltd website."""
     return render_template('index.html')
 
 @app.route('/submit-form', methods=['POST'])
@@ -35,7 +35,7 @@ def submit_form():
         app.logger.info(f"Form submission received from {name} ({email})")
         
         # Success message
-        flash('Thank you for your message! We will get back to you soon.', 'success')
+        flash('Thank you for your inquiry! Our team will contact you within 24 hours.', 'success')
         return redirect(url_for('index') + '#contact')
     
     except Exception as e:

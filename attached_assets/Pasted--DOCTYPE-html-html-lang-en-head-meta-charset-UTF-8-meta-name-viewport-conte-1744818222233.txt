@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mutabtrine Investments Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8C0444;
+      --secondary: #F24607;
+      --accent: #F2C4DA;
+      --text: #F2F2F2;
+      --dark: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    nav a {
+      color: var(--text);
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1604147706284-6c8b5c0d6b8e') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service {
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      background: #333;
+    }
+
+    .service h4 {
+      margin-top: 10px;
+      color: var(--secondary);
+    }
+
+    .about, .contact {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin-inline: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #444;
+      color: white;
+    }
+
+    button {
+      padding: 12px;
+      background: var(--secondary);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mutabtrine Investments Ltd</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>We Build. We Brand. We Deliver.</h2>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p class="about">
+      Mutabtrine Investments Limited is your one-stop solution for innovative construction, creative branding, precision printing, metal fabrication, and more. We combine craftsmanship with cutting-edge technology to deliver outstanding results in every project.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service">
+        <h4>Construction</h4>
+        <p>Residential, commercial, and custom builds with expert project management.</p>
+      </div>
+      <div class="service">
+        <h4>Branding & Design</h4>
+        <p>From logos to full campaigns — we bring your brand to life.</p>
+      </div>
+      <div class="service">
+        <h4>T-Shirt Printing</h4>
+        <p>High-quality screen and digital printing for events and businesses.</p>
+      </div>
+      <div class="service">
+        <h4>3D Signage</h4>
+        <p>Eye-catching, durable 3D signage to boost your visibility.</p>
+      </div>
+      <div class="service">
+        <h4>Photocopying & Printing</h4>
+        <p>Efficient, affordable document services with sharp results.</p>
+      </div>
+      <div class="service">
+        <h4>Metal Fabrication</h4>
+        <p>Custom metal work for construction, signage, and installations.</p>
+      </div>
+      <div class="service">
+        <h4>Large Format Printing</h4>
+        <p>Banners, posters, and outdoor prints with maximum impact.</p>
+      </div>
+      <div class="service">
+        <h4>Office Branding</h4>
+        <p>Transform your workspace with professional, personalized designs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
